@@ -65,12 +65,15 @@ footer {
   background-color: #FBF3EE;
   font-size: 1.4rem;
   line-height: 2.2rem;
-
 }
 
-a.icons{
-  /***social media icons***/
-  padding-right: 2.9rem;
+.icons img { /***social media icons***/
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.abticons img  {
+  margin-left: auto;
 }
 
 p.hello {
