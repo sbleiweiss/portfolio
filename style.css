@@ -11,6 +11,18 @@ body {
   background-color: lavender;
 }
 
+.logo {
+  clear:both;
+  display: inline-block;
+  float: left;
+}
+
+nav ul li {
+  display: inline-block;
+  float: right;
+  padding-right: 1.6rem;
+}
+
 .container{
   background-color: #FFFDFD; /***light white***/
   margin: 0 auto;
@@ -52,6 +64,8 @@ footer {
   /***bottom footer***/
   background-color: #FBF3EE;
   font-size: 1.4rem;
+  line-height: 2.2rem;
+
 }
 
 a.icons{
@@ -65,11 +79,11 @@ p.hello {
   font-weight: bold;
 }
 
-
 nav.topnav {
   font-size: 1.6rem;
   font-weight: bold;
 }
+
 
 section.darkbg {
   background-color: #F9F6F6; /***darker white***/
@@ -137,4 +151,6 @@ p.tagline {
   /***phone size***/
   .container {
     width: 580px;
-  }
+    grid-template-columns: 1fr;
+    }
+}
