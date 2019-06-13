@@ -39,14 +39,19 @@ text-align: center;
 padding: 0;
 }
 
-.iconlist li {
+.iconlist li{
   /*** icons on about page***/
   display: inline-block;
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  width: 28%;
+  padding-right: 2rem;
 }
 
 
+.iconlist img {
+  vertical-align: middle;
+}
 
 a{
   /***link color***/
@@ -109,7 +114,7 @@ section, footer, nav.topnav {
 }
 
 .actionitems {
-  padding-top: 2.5rem;
+  padding-top: 4.5rem;
 }
 
 .actionlist {
@@ -119,6 +124,14 @@ padding-bottom: 2.5rem;
 
 .actiontakeaway {
   padding-top: 2.5rem;
+}
+
+.listspacesmall {
+  padding-top: 1rem;
+}
+
+.listspacelarge {
+  padding-top: 2rem;
 }
 
 footer {
@@ -138,10 +151,11 @@ footer {
 }
 
 
-.personas {
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
+.photospace {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
+
 
 .icons img { /***social media icons in footer***/
   padding-top: 2rem;
@@ -168,8 +182,25 @@ p.aboutPheadings {
   padding-bottom: 1rem;
 }
 
-p.project1Pspace {
+p.project1Ptopspace {
   padding-top: 2rem;
+}
+
+p.project1Pbottomspace {
+  padding-bottom: 2rem;
+}
+
+.userstories li {
+  display: grid;
+  grid-template-columns: 1fr 12fr;
+  grid-column-gap: 2rem;
+  padding-left: 2rem;
+}
+
+.blockquote {
+  color: #5D3C0E;
+  font-family: "Open sans", sans-serif;
+  padding-left: 2rem;
 }
 
 nav.topnav {
@@ -258,8 +289,8 @@ padding-top: 3.5rem;
 
 
 .companalysisSMicons {
-  /* padding-top: 3.5rem; */
-  padding-right: 1rem;
+  padding-top: 3.5rem;
+  /* padding-right: 2rem; */
 }
 
 ul.companalysisSMicons {
@@ -268,11 +299,16 @@ ul.companalysisSMicons {
 
 .companalysisSMicons li {
   display: inline-block;
+  width: 28%;
+  padding-right: 1rem;
+  /* padding-top: 3.5rem;
+  padding-right: 2rem; */
 }
 
-img.companalysisimg {
-  width: 80%;
-}
+/* img.companalysisimg {
+  padding-left: 2rem;
+  padding-right: 2rem;
+} */
 
 
 p.intro {
@@ -287,8 +323,10 @@ p.tagline {
   /* padding-bottom: 3.4rem;*/
 }
 
-.blockquote {
-
+.quote {
+  /***user story quote**/
+  padding-left: 3rem;
+  border-left: .4rem #D26526 solid;
 }
 
 
