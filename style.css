@@ -50,8 +50,14 @@ padding: 0;
 
 .companalysisSMicons li {
   display: inline-block;
-  padding: 3.5rem 1rem 3.5rem 1rem;
+  /* padding-top: 3.5rem; */
+  padding-right: 1rem;
 }
+
+.companalysisimg img {
+  width: 80%;
+}
+
 
 a{
   /***link color***/
@@ -69,11 +75,15 @@ a.button {
   display: block;
   font-size: 16px;
   font-weight: bold;
-  /* margin-top: 2rem;
-  margin-bottom: 2rem; */ 
-  padding: 1.25rem 10.3rem 1.25rem 10.3rem; /***for the button***/
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+  padding: 1.25rem 10.3rem 1.25rem 10.3rem; /***for the button itself***/
   text-align: center;
   white-space: nowrap;
+}
+
+.button:last-child {
+  margin-bottom: 1rem;
 }
 
 section, footer, nav.topnav {
@@ -90,6 +100,7 @@ section, footer, nav.topnav {
   /* padding: 3.5rem 2rem; */
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-bottom: 3.5rem;
 }
 
 .testingimg{
@@ -210,7 +221,8 @@ h1.pagehead {
   font-family: "Noto Serif", serif;
   font-size: 3rem;
   font-weight: bold;
-  /* padding-bottom: 3.5rem; */
+  padding-top: 11rem;
+  padding-bottom: 3.5rem;
 }
 
 h2.process {
@@ -238,10 +250,6 @@ padding-top: 3.5rem;
   color: #D26526;
 }
 
-.processlist {
-  padding-bottom: 3.5rem;
-}
-
 .surveyresults li {
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
@@ -250,13 +258,27 @@ padding-top: 3.5rem;
 p.intro {
   /***hero intro landing page***/
   font-size: 2rem;
-  /* padding-bottom: 3.5rem; */
+  padding-bottom: 1.5rem;
 }
 
 p.tagline {
   /***start with a mood, find inspiration...***/
   font-size: 1.6rem;
   /* padding-bottom: 3.4rem;*/
+}
+
+.blockquote {
+
+}
+
+
+.moodspirelanding {
+  color: #EB9A28;
+  font-family: "Noto Serif", serif;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 3.5rem;
+  padding-bottom: 1.9rem;
 }
 
 @media (min-width: 600px) {
