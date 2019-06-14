@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background-color: lavender;
+  background-color: white;
 }
 
 .container{
@@ -35,21 +35,26 @@ nav ul li {
 
 #abticonlist{
 /*** icons on about page***/
-text-align: center;
 padding: 0;
+text-align: center;
 }
 
 .iconlist li{
   /*** icons on about page***/
   display: inline-block;
-  padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-  width: 28%;
   padding-right: 2rem;
+  padding-top: 2.5rem;
+  width: 28%;
+}
+
+.iconlist:last-child li{
+  padding-bottom: 0rem;
 }
 
 
 .iconlist img {
+  /**about me icons***/
   vertical-align: middle;
 }
 
@@ -69,14 +74,15 @@ a.button {
   display: block;
   font-size: 16px;
   font-weight: bold;
-  margin-top: 3.5rem;
   margin-bottom: 3.5rem;
+  margin-top: 3.5rem;
   padding: 1.25rem 10.3rem 1.25rem 10.3rem; /***for the button itself***/
   text-align: center;
   white-space: nowrap;
 }
 
 .button:last-child {
+  /*** adjust buton spacing at the bottom to not double up on section padding***/
   margin-bottom: 1rem;
 }
 
@@ -89,48 +95,54 @@ section, footer, nav.topnav {
 }
 
 .section {
-  /* display: grid;
-  grid-template-columns: 1fr; */
-  /* padding: 3.5rem 2rem; */
+  /***general section style***/
+  padding-bottom: 3.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-bottom: 3.5rem;
 }
 
 .testingimg{
+  /***hifi testing image***/
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-columns: minmax(auto 1.57rem);
+  grid-auto-columns: minmax(auto, 1.57rem);
   grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
 }
 
 .testingquote{
+  /***testing section results quote ffrom css grid***/
   align-self: center;
 }
 
 .testingexpl ul{
-  grid-column-start: 1;
+  /***testing section results grid***/
   grid-column-end: 3;
+  grid-column-start: 1;
 }
 
 .actionitems {
+  /***space in testing section on action items***/
   padding-top: 4.5rem;
 }
 
 .actionlist {
-padding-top: 1rem;
+  /***space in testing section for action list***/
 padding-bottom: 2.5rem;
+padding-top: 1rem;
 }
 
 .actiontakeaway {
+  /***user testing action takeaway***/
   padding-top: 2.5rem;
 }
 
 .listspacesmall {
+  /***small space on top for list items***/
   padding-top: 1rem;
 }
 
 .listspacelarge {
+  /***larger space on top for list items***/
   padding-top: 2rem;
 }
 
@@ -152,15 +164,17 @@ footer {
 
 
 .photospace {
-  margin-top: 2rem;
+  /***space around photo***/
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 
-.icons img { /***social media icons in footer***/
+.icons img {
+  /***social media icons in footer***/
+  padding-right: 2.9rem;
   padding-top: 2rem;
   /* padding-bottom: 2rem; */
-  padding-right: 2.9rem;
 }
 
 p.hello {
@@ -183,25 +197,28 @@ p.aboutPheadings {
 }
 
 p.project1Ptopspace {
+  /***top space for p tag ***/
   padding-top: 2rem;
 }
 
 p.project1Pbottomspace {
+  /***bottom space for p tag***/
   padding-bottom: 2rem;
 }
 
 .userstories li {
+  /***user stories css grid***/
   display: grid;
-  grid-template-columns: 1fr 12fr;
   grid-column-gap: 2rem;
+  grid-template-columns: 1fr 12fr;
   padding-left: 2rem;
 }
 
-.blockquote {
+/*** .blockquote {
   color: #5D3C0E;
   font-family: "Open sans", sans-serif;
   padding-left: 2rem;
-}
+} ***/
 
 nav.topnav {
   /*** top navigational styles***/
@@ -211,21 +228,25 @@ nav.topnav {
 }
 
 
-.section:nth-child(odd){ /***alternating background ***/
+.section:nth-child(odd){
+  /***alternating background ***/
   background-color: #FFFDFD; /***light white***/
 }
 
-.section:nth-child(even){ /***alternating background ***/
+.section:nth-child(even){
+  /***alternating background ***/
   background-color: #F9F6F6; /***darker white***/
 }
 
 img {
+  /***general img tag styles***/
+  display: inline-block;
   max-width: 100%;
   max-height: 100%;
-  display: inline-block;
 }
 
 video {
+  /***video styles***/
 max-width: 100%;
 max-height: 100%
 }
@@ -243,9 +264,9 @@ p, ul {
     line-height: 2.4rem;
 }
 
-p.designprocess {
+/*** p.designprocess {
   color: #D26526;
-}
+} ***/
 
 h1.pagehead {
   /***yellow largest header***/
@@ -253,8 +274,8 @@ h1.pagehead {
   font-family: "Noto Serif", serif;
   font-size: 3rem;
   font-weight: bold;
-  padding-top: 11rem;
   padding-bottom: 3.5rem;
+  padding-top: 11rem;
 }
 
 h2.process {
@@ -283,33 +304,31 @@ padding-top: 3.5rem;
 }
 
 .surveyresults li{
-  margin-top: 2rem;
+  /***results of survey section***/
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 
 .companalysisSMicons {
+  /***pinterest, instagram, tumblr icons***/
   padding-top: 3.5rem;
   /* padding-right: 2rem; */
 }
 
 ul.companalysisSMicons {
+  /***pinterest, instagram, tumblr icons***/
   text-align:center;
 }
 
 .companalysisSMicons li {
+  /***pinterest, instagram, tumblr icons***/
   display: inline-block;
-  width: 28%;
   padding-right: 1rem;
+  width: 28%;
   /* padding-top: 3.5rem;
   padding-right: 2rem; */
 }
-
-/* img.companalysisimg {
-  padding-left: 2rem;
-  padding-right: 2rem;
-} */
-
 
 p.intro {
   /***hero intro landing page***/
@@ -325,18 +344,19 @@ p.tagline {
 
 .quote {
   /***user story quote**/
-  padding-left: 3rem;
   border-left: .4rem #D26526 solid;
+  padding-left: 3rem;
 }
 
 
 .moodspirelanding {
+  /***moodspire text on landing page***/
   color: #EB9A28;
   font-family: "Noto Serif", serif;
   font-size: 3rem;
   font-weight: bold;
-  padding-top: 3.5rem;
   padding-bottom: 1.9rem;
+  padding-top: 3.5rem;
 }
 
 @media (min-width: 600px) {
