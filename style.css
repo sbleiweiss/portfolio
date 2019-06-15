@@ -53,7 +53,12 @@ text-align: center;
   vertical-align: middle;
 }
 
-.iconlist:last-child li{
+/*** .iconlist:last-child li{
+  padding-bottom: 0rem;
+} ***/
+
+.lasticonlist li {
+  display: inline-block;
   padding-bottom: 0rem;
 }
 
