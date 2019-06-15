@@ -48,14 +48,13 @@ text-align: center;
   width: 28%;
 }
 
-.iconlist:last-child li{
-  padding-bottom: 0rem;
-}
-
-
 .iconlist img {
   /**about me icons***/
   vertical-align: middle;
+}
+
+.iconlist:last-child li{
+  padding-bottom: 0rem;
 }
 
 a{
