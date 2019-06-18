@@ -31,20 +31,21 @@ body {
   padding-top: 3.8rem;
 } ***/
 
-.topnavcontainer{
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-column-gap:8rem;
-  grid-auto-rows: 10rem;
-}
 
 .topnav {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 1rem;
-  padding-top: 3.5rem;
-  padding-right: 1.5rem;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: 10rem;
+  position: absolute;
 }
+
+.navlinks {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1.5rem;
+  padding-top: 3.5rem;
+}
+
 
 #abticonlist{
 /*** icons on about page***/
