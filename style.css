@@ -37,11 +37,12 @@ body {
   grid-template-columns: 1fr 2fr;
   grid-auto-rows: 10rem;
   position: absolute;
+  grid-column-gap: 7.5rem;
 }
 
 .navlinks {
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 0.7fr 1fr;
   grid-column-gap: 1.5rem;
   padding-top: 3.5rem;
 }
@@ -248,12 +249,12 @@ nav.topnav {
 
 .section:nth-child(odd){
   /***alternating background ***/
-  background-color: #FFFDFD; /***light white***/
+  background-color: #F9F6F6; /***light white***/
 }
 
 .section:nth-child(even){
   /***alternating background ***/
-  background-color: #F9F6F6; /***darker white***/
+  background-color: #FFFDFD;/***darker white***/
 }
 
 img {
@@ -377,44 +378,183 @@ p.tagline {
   padding-top: 3.5rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 320px) {
   /***phone size***/
   .container {
-    width: 580px;
+    width: 100%;
     }
 }
 
-@media (min-width: 1199px) {
-  /***desktop size***/
+@media (min-width:768px) {
+  /***tablet***/
   .container {
-    width: 90%;
-    background-color: lavender;
+    width: 100%;
   }
 
   html {
     /***base size***/
-    font-size: 14px;
+    font-size: 11px;
   }
 
-  .section {
+  .topnav {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: 10rem;
+    position: absolute;
+    grid-column-gap: 50rem;
+  }
+
+  .navlinks {
+    display:grid;
+    grid-template-columns: 0.5fr 0.7fr 1fr;
+    grid-column-gap: 2.5rem;
+    padding-top: 3.5rem;
+  }
+
+  .section{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+
+  .herolanding, .moodspireprojecthero, .roleoverview, .problemsolution, .userresearch, .companalysis, .userpersonas, .infoarchitecturesection, .userflowsstories, .prototypeandtestingsection, .visualdesign, .hifimockups, .testingrefinements, .conclusionsection, .abouthero, .aboutindetail {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 3rem;
   }
 
-  .pagehead, p.intro, p.passionate {
-    grid-column: 1/3;
-  }
-
-  .moodspirelanding, p.tagline, .casestudybutton {
-    grid-column: 1/2;
-  }
-
-  img.rightalignedphoto  {
-    grid-column: 2/4;
-    display: inline-block;
+  .pagehead, .intro, .passionate, .whysurvey, .pcompanalysis, .puserpersonas, .pinfoarchitecture, .userstories, .puserflowsstories, .pprototypeandtesting, .pcolors, .ptestingrefinements, .pagehead, .aboutPheadings, .pabouthero, .paboutdetailleft {
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 
 
 
+  .moodspirelanding, .tagline, .leftsidebutton, .roles, .problem, .solution, .process, .stages, .surveyresults, .userpersonaphoto, .userstoriesbutton, .keytakeawaytesting, .pvisualdesign, .gothic, .phifimockups, .actionitems, .actionlist, .actiontakeaway {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .deliverables, .centerbutton {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+  }
+
+  .tools, .duration, .rightbutton, .companalysisSMicons, .gridphotoright, .companalysisimg {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+
+  .pproblem, .psolution, .surveytakeaway, .userpersonaquote, .testingevidence, .logosketches, .ptypography, .conclusionli, .pindetailright, .gridphotorightlarge, .moodspiremockup {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .gridphotorightlarge, .moodspiremockup {
+    justify-self: center;
+  }
+
+  .moodspiremockup {
+    grid-row-start: 2;
+  }
+
+  .deliverables, .tools {
+    grid-row-start: 1;
+  }
+  .pdeliverables, .ptools {
+    grid-row-start: 2;
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+  /***desktop size***/
+  .container {
+    width: 100%;
+    background-color: white;
+  }
+
+  html {
+    /***base size***/
+    font-size: 13px;
+  }
+
+  .topnav {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: 10rem;
+    position: absolute;
+    grid-column-gap: 50rem;
+  }
+
+  .navlinks {
+    display:grid;
+    grid-template-columns: 0.5fr 0.7fr 1fr;
+    grid-column-gap: 2.5rem;
+    padding-top: 3.5rem;
+  }
+
+  .section{
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+
+  .herolanding, .moodspireprojecthero, .roleoverview, .problemsolution, .userresearch, .companalysis, .userpersonas, .infoarchitecturesection, .userflowsstories, .prototypeandtestingsection, .visualdesign, .hifimockups, .testingrefinements, .conclusionsection, .abouthero, .aboutindetail {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 4rem;
+  }
+
+  .pagehead, .intro, .passionate, .whysurvey, .pcompanalysis, .puserpersonas, .pinfoarchitecture, .puserflowsstories, .pprototypeandtesting, .pcolors, .ptestingrefinements, .pagehead, .aboutPheadings, .pabouthero, .paboutdetailleft {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+
+
+  .moodspirelanding, .tagline, .leftsidebutton, .roles, .problem, .solution, .process, .stages, .surveyresults, .userpersonaphoto, .keytakeawaytesting, .pvisualdesign, .gothic, .phifimockups, .actionitems, .actionlist, .actiontakeaway {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .deliverables, .centerbutton {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+  }
+
+  .tools, .duration, .rightbutton, .companalysisSMicons, .gridphotoright, .companalysisimg, .userstories {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+
+  .pproblem, .psolution, .surveytakeaway, .userpersonaquote, .testingevidence, .logosketches, .ptypography, .conclusionli, .pindetailright, .gridphotorightlarge, .moodspiremockup {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .gridphotorightlarge, .moodspiremockup {
+    justify-self: center;
+  }
+
+  .moodspiremockup {
+    grid-row-start: 2;
+  }
+
+  .deliverables, .tools {
+    grid-row-start: 1;
+  }
+  .pdeliverables, .ptools {
+    grid-row-start: 2;
+  }
+
+.processlist a.processlinks:hover {
+    color: lavender;
+  }
 
 }
