@@ -479,7 +479,7 @@ p.tagline {
 
   html {
     /***base size***/
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .topnav {
@@ -503,40 +503,57 @@ p.tagline {
   }
 
 
-  .herolanding, .moodspireprojecthero, .roleoverview, .problemsolution, .userresearch, .companalysis, .userpersonas, .infoarchitecturesection, .userflowsstories, .prototypeandtestingsection, .visualdesign, .hifimockups, .testingrefinements, .conclusionsection, .abouthero, .aboutindetail {
+  .herolanding, .moodspireprojecthero, .heroheading, .roleoverview, .problemsolution, .userresearch, .companalysis, .userpersonas, .infoarchitecturesection, .userflowsstories, .prototypeandtestingsection, .visualdesign, .hifimockups, .testingrefinements, .conclusionsection, .abouthero, .aboutindetail {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 4rem;
   }
 
-  .pagehead, .intro, .passionate, .whysurvey, .pcompanalysis, .puserpersonas, .pinfoarchitecture, .puserflowsstories, .pprototypeandtesting, .pcolors, .ptestingrefinements, .pagehead, .aboutPheadings, .pabouthero, .paboutdetailleft {
+  .pagehead, .intro, .passionate, .whysurvey, .pcompanalysis, .puserpersonas, .pinfoarchitecture, .puserflowsstories, .userstoriestextandbutton, .pprototypeandtesting, .pcolors, .ptestingrefinements, .pagehead, .aboutPheadings, .pabouthero, .paboutdetailleft {
     grid-column-start: 1;
     grid-column-end: 3;
   }
 
 
 
-  .moodspirelanding, .tagline, .leftsidebutton, .roles, .problem, .solution, .process, .stages, .surveyresults, .userpersonaphoto, .keytakeawaytesting, .pvisualdesign, .gothic, .phifimockups, .actionitems, .actionlist, .actiontakeaway {
+  .moodspirelanding, .heroheading, .tagline, .leftsidebutton, .roles, .problem, .solution, .process, .stages, .surveyresults, .userpersonaphoto, .keytakeawaytesting, .pvisualdesign, .gothic, .phifimockups, .actionitems, .actionlist, .actiontakeaway {
     grid-column-start: 1;
     grid-column-end: 2;
+  }
+
+  .heroheading {
+    /* align button and hero images with text in the center */
+    align-content: start;
   }
 
   .deliverables, .centerbutton {
     grid-column-start: 2;
     grid-column-end: 3;
-
   }
+
 
   .tools, .duration, .rightbutton, .companalysisSMicons, .gridphotoright, .companalysisimg, .userstories {
     grid-column-start: 3;
     grid-column-end: 4;
   }
 
-
   .pproblem, .psolution, .surveytakeaway, .userpersonaquote, .testingevidence, .logosketches, .ptypography, .conclusionli, .pindetailright, .gridphotorightlarge, .moodspiremockup {
     grid-column-start: 2;
     grid-column-end: 4;
   }
+
+  .pproblem{
+    padding-top: 3.5rem;
+  }
+
+  .psolution {
+    padding-top: 3.5rem;
+  }
+
+  .userpersonaphoto, .userpersonaquotebutton {
+    padding-top: 3.5rem;
+  }
+
 
   .gridphotorightlarge, .moodspiremockup {
     justify-self: center;
