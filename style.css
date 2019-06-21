@@ -85,7 +85,7 @@ a{
 }
 
 a.button {
-  /***(old/original button style***/
+  /***button style***/
   background-color: #FFFFFF;
   border-color: #D26526;
   border-style: solid;
@@ -99,9 +99,6 @@ a.button {
   text-align: center;
   white-space: nowrap;
 }
-
-
-
 
 .button:last-child {
   /*** adjust buton spacing at the bottom to not double up on section padding***/
@@ -506,6 +503,12 @@ p.tagline {
     padding-right: 8rem;
   }
 
+  a.button {
+    display: inline-block;
+
+
+
+  }
 
   .herolanding, .moodspireprojecthero, .heroheading, .roleoverview, .problemsolution, .userresearch, .companalysis, .userpersonas, .userpersonaquotebutton, .infoarchitecturesection, .userflowsstories, .prototypeandtestingsection, .visualdesign, .hifimockups, .testingrefinements, .conclusionsection, .abouthero, .aboutindetail {
     display: grid;
