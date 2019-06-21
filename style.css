@@ -502,8 +502,12 @@ p.tagline {
     padding-right: 8rem;
   }
 
+  a.button {
+    display: inline-block;
 
-  .herolanding, .moodspireprojecthero, .heroheading, .roleoverview, .problemsolution, .userresearch, .companalysis, .userpersonas, .infoarchitecturesection, .userflowsstories, .prototypeandtestingsection, .visualdesign, .hifimockups, .testingrefinements, .conclusionsection, .abouthero, .aboutindetail {
+  }
+
+  .herolanding, .moodspireprojecthero, .heroheading, .roleoverview, .problemsolution, .userresearch, .companalysis, .userpersonas, .userpersonaquotebutton, .infoarchitecturesection, .userflowsstories, .prototypeandtestingsection, .visualdesign, .moodspireexplanationlogo, .hifimockups, .testingrefinements, .conclusionsection, .abouthero, .aboutindetail {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 4rem;
@@ -516,12 +520,12 @@ p.tagline {
 
 
 
-  .moodspirelanding, .heroheading, .tagline, .leftsidebutton, .roles, .problem, .solution, .process, .stages, .surveyresults, .userpersonaphoto, .keytakeawaytesting, .pvisualdesign, .gothic, .phifimockups, .actionitems, .actionlist, .actiontakeaway {
+  .moodspirelanding, .heroheading, .tagline, .leftsidebutton, .roles, .problem, .solution, .process, .stages, .surveyresults, .userpersonaphoto, .keytakeawaytesting, .pvisualdesign, .moodspireexplanationlogo, .gothic, .phifimockups, .actionitems, .actionlist, .actiontakeaway {
     grid-column-start: 1;
     grid-column-end: 2;
   }
 
-  .heroheading {
+  .heroheading, .moodspireexplanationlogo {
     /* align button and hero images with text in the center */
     align-content: start;
   }
@@ -542,18 +546,13 @@ p.tagline {
     grid-column-end: 4;
   }
 
-  .pproblem{
+ .pproblem, .psolution, .userpersonaphoto, .userpersonaquotebutton, .problemsolved {
     padding-top: 3.5rem;
   }
 
-  .psolution {
-    padding-top: 3.5rem;
+  .majortakeawaylist {
+    padding-top: 1.5rem;
   }
-
-  .userpersonaphoto, .userpersonaquotebutton {
-    padding-top: 3.5rem;
-  }
-
 
   .gridphotorightlarge, .moodspiremockup {
     justify-self: center;
@@ -570,8 +569,18 @@ p.tagline {
     grid-row-start: 2;
   }
 
+  .quote, .surveytakeaway {
+  border-left: .4rem #D26526 solid;
+  padding-left: 3rem;
+  }
+
+  .wireframe {
+    padding-top: 3rem;
+  }
+
 .processlist a.processlinks:hover {
     color: lavender;
   }
+
 
 }
