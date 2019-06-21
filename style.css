@@ -522,7 +522,7 @@ p.tagline {
 
 
 
-  .moodspirelanding, .heroheading, .tagline, .leftsidebutton, .roles, .problem, .solution, .process, .stages, .surveyresults, .userpersonaphoto, .keytakeawaytesting, .pvisualdesign, .moodspireexplanationlogo, .gothic, .phifimockups, .actionitems, .actionlist, .actiontakeaway {
+  .moodspirelanding, .heroheading, .tagline, .leftsidebutton, .roles, .problem, .solution, .process, .stages, .surveyresults, .userpersonaphoto, .keytakeawaytesting, .pvisualdesign, .moodspireexplanationlogo, .gothic, .phifimockups, .hifimockupsandbutton, .actionitems, .actionitems2, .actionitems3, .actionlist, .actiontakeaway {
     grid-column-start: 1;
     grid-column-end: 2;
   }
@@ -588,7 +588,8 @@ p.tagline {
 
   .testingimg {
     grid-column: span 2;
-    grid-gap: 4rem;
+    grid-column-gap: 4rem;
+    grid-row-gap: 2rem;
   }
 
   .icons img {
@@ -598,10 +599,29 @@ p.tagline {
 
   .companalysisSMicons li {
     display: block;
-    width: 38%;
-    padding: 2rem 0 2rem 0;
+    width: 36%;
     justify-content: center;
   }
 
+  .companalysisSMicons {
+    padding-top: 0;
+  }
+
+  .instagrampadding {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .testingimgpadding {
+    padding-top: 4rem;
+  }
+
+  p.actiontakeaway {
+    padding-top: 4rem;
+  }
+
+  .actionitems2, .actionitems3, {
+    align-content: start;
+  }
 
 }
