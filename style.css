@@ -126,6 +126,7 @@ section, footer, nav.topnav {
   grid-auto-columns: minmax(auto, 1.57rem);
   grid-gap: 2rem;
   grid-template-columns: 1fr 1fr;
+
 }
 
 .testingquote{
@@ -193,6 +194,7 @@ footer {
   /***social media icons in footer***/
   padding-right: 2.9rem;
   padding-top: 2rem;
+  width: 20%;
   /* padding-bottom: 2rem; */
 }
 
@@ -260,8 +262,7 @@ nav.topnav {
 img {
   /***general img tag styles***/
   display: inline-block;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
 }
 
 video {
@@ -448,6 +449,7 @@ p.tagline {
 
 
   .pproblem, .psolution, .surveytakeaway, .userpersonaquote, .testingevidence, .logosketches, .ptypography, .conclusionli, .pindetailright, .gridphotorightlarge, .moodspiremockup {
+    .pproblem, .psolution, .surveytakeaway, .userpersonaquote, .testingevidence, .sketches, .ptypography, .conclusionli, .pindetailright, .gridphotorightlarge, .moodspiremockup {
     grid-column-start: 2;
     grid-column-end: 4;
   }
@@ -507,13 +509,13 @@ p.tagline {
 
   }
 
-  .herolanding, .moodspireprojecthero, .heroheading, .roleoverview, .problemsolution, .userresearch, .companalysis, .userpersonas, .userpersonaquotebutton, .infoarchitecturesection, .userflowsstories, .prototypeandtestingsection, .visualdesign, .moodspireexplanationlogo, .hifimockups, .testingrefinements, .conclusionsection, .abouthero, .aboutindetail {
+  .herolanding, .moodspireprojecthero, .heroheading, .roleoverview, .problemsolution, .userresearch, .companalysis, .userpersonas, .userpersonaquotebutton, .infoarchitecturesection, .userflowsstories, .prototypeandtestingsection, .visualdesign, .hifimockups, .testingrefinements, .conclusionsection, .abouthero, .aboutindetail {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 4rem;
   }
 
-  .pagehead, .intro, .passionate, .whysurvey, .pcompanalysis, .puserpersonas, .pinfoarchitecture, .puserflowsstories, .userstoriestextandbutton, .pprototypeandtesting, .pcolors, .ptestingrefinements, .pagehead, .aboutPheadings, .pabouthero, .paboutdetailleft {
+  .pagehead, .intro, .passionate, .whysurvey, .pcompanalysis, .companalysistextbutton, .puserpersonas, .pinfoarchitecture, .puserflowsstories, .userstoriestextandbutton, .pprototypeandtesting, .pcolors, .ptestingrefinements, .pagehead, .aboutPheadings, .pabouthero, .paboutdetailleft {
     grid-column-start: 1;
     grid-column-end: 3;
   }
@@ -536,7 +538,7 @@ p.tagline {
   }
 
 
-  .tools, .duration, .rightbutton, .companalysisSMicons, .gridphotoright, .companalysisimg, .userstories {
+  .tools, .duration, .rightbutton, .companalysisSMicons, .gridphotoright, .userstories {
     grid-column-start: 3;
     grid-column-end: 4;
   }
@@ -575,11 +577,30 @@ p.tagline {
   }
 
   .wireframe {
+    /***wireframe image ***/
     padding-top: 3rem;
   }
 
-.processlist a.processlinks:hover {
-    color: lavender;
+  .moodspirelogo {
+    display: inline;
+    padding-top: 3.5rem;
+  }
+
+  .testingimg {
+    grid-column: span 2;
+    grid-gap: 4rem;
+  }
+
+  .icons img {
+    /***footer icons ***/
+    width: 8%;
+  }
+
+  .companalysisSMicons li {
+    display: block;
+    width: 38%;
+    padding: 2rem 0 2rem 0;
+    justify-content: center;
   }
 
 
