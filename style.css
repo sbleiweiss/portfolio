@@ -687,5 +687,24 @@ p.tagline {
     justify-content: center;
   }
 
+  .begindesignicons {
+    margin-top: 10rem;
+  }
+
+  .educationicons {
+    margin-top: -25rem;
+  }
+
+  .techanddesignicons {
+    margin-top: 4rem;
+  }
+
+  .growuxicons {
+    margin-top: -19rem;
+  }
+
+  .finaluxicons {
+    margin-top: -21rem;
+  }
 
 }
