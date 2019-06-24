@@ -364,9 +364,28 @@ p.tagline {
     width: 375px;
     }
 
-    .aboutphoto {
-      width: 90%;
+  .aboutphoto {
+    width: 90%;
     }
+
+  .companalysis {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    }
+
+  .pcompanalysis {
+    order: 1;
+    }
+
+  .companalysisSMicons {
+    order: 2;
+    }
+
+  .compabutton {
+    order: 3;
+    }
+
 }
 
 @media (min-width:768px) {
