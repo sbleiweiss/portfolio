@@ -629,7 +629,8 @@ p.tagline {
     grid-template-columns: 1fr 2fr;
     grid-auto-rows: 10rem;
     position: absolute;
-    grid-column-gap: 50rem;
+    padding-left: 6rem;
+    grid-column-gap: 55.3rem;
   }
 
   .navlinks {
@@ -648,110 +649,18 @@ p.tagline {
     display: inline-block;
   }
 
-  .herolanding, .moodspireprojecthero, .heroheading,
-  .roleoverview, .problemsolution, .userresearch,
-  .companalysis, .userpersonas, .userpersonaquotebutton,
-  .infoarchitecturesection, .userflowsstories,
-  .prototypeandtestingsection, .visualdesign, .hifimockups,
-  .testingrefinements, .conclusionsection, .abouthero, .aboutindetail {
+  .hifimockups, .testingrefinements, .aboutindetail {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 4rem;
   }
 
-  .pagehead, .intro, .passionate, .whysurvey, .pcompanalysis,
-  .companalysistextbutton, .puserpersonas, .pinfoarchitecture,
-  .puserflowsstories, .userstoriestextandbutton, .pprototypeandtesting,
-  .pcolors, .ptestingrefinements, .pagehead, .aboutPheadings, .pabouthero,
-  .paboutdetailleft {
+  .whysurvey {
+    /* I created a user survey... */
     grid-column-start: 1;
     grid-column-end: 3;
   }
 
-
-
-  .moodspirelanding, .heroheading, .tagline, .leftsidebutton,
-  .roles, .problem, .solution, .process, .stages, .surveyresults,
-  .userpersonaphoto, .keytakeawaytesting, .pvisualdesign,
-  .moodspireexplanationlogo, .gothic, .phifimockups, .hifimockupsandbutton,
-  .actionitems, .actionitems2, .actionitems3, .actionlist, .actiontakeaway {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-
-  .heroheading, .moodspireexplanationlogo {
-    /* align button and hero images with text in the center */
-    align-content: start;
-  }
-
-  .deliverables, .centerbutton {
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-
-
-  .tools, .duration, .rightbutton, .companalysisSMicons,
-  .gridphotoright, .userstories, .userflowbutton {
-    grid-column-start: 3;
-    grid-column-end: 4;
-  }
-
-  .userflowtextandbutton {
-    grid-row-start: 3;
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-
-  .pproblem, .psolution, .surveytakeaway, .userpersonaquote,
-  .testingevidence, .logosketches, .brandingprocess, .ptypography,
-  .conclusionli, .pindetailright, .gridphotorightlarge, .moodspiremockup {
-    grid-column-start: 2;
-    grid-column-end: 4;
-  }
-
- .pproblem, .psolution, .userpersonaphoto, .userpersonaquotebutton,
- .problemsolved {
-    padding-top: 3.5rem;
-  }
-
-  .wireframe {
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-
-  .majortakeawaylist {
-    padding-top: 1.5rem;
-  }
-
-  .gridphotorightlarge, .moodspiremockup {
-    justify-self: center;
-  }
-
-  .moodspiremockup {
-    grid-row-start: 2;
-  }
-
-  .deliverables, .tools {
-    grid-row-start: 1;
-  }
-  .pdeliverables, .ptools {
-    grid-row-start: 2;
-  }
-
-  .quote, .surveytakeaway {
-  border-left: .4rem #D26526 solid;
-  padding-left: 3rem;
-  }
-
-  .wireframe {
-    /***wireframe image ***/
-    padding-top: 3rem;
-  }
-
-  .moodspirelogo {
-    display: inline;
-    padding-top: 3.5rem;
-  }
 
   .testingimg {
     grid-column: span 2;
@@ -770,44 +679,6 @@ p.tagline {
     justify-content: center;
   }
 
-  .companalysisSMicons {
-    padding-top: 0;
-  }
-
-  .instagrampadding {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  .testingimgpadding {
-    padding-top: 4rem;
-  }
-
-  p.actiontakeaway {
-    padding-top: 4rem;
-  }
-
-  .actionitems2, .actionitems3, {
-    align-content: start;
-  }
-
-  p.surveytakeaway{
-    align-self: center;
-    padding-top: 0;
-  }
-
-  .wordassociation {
-    padding-bottom: 8rem;
-  }
-
-  .photospace {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
-
-  .logosketches {
-    padding-bottom: 2rem;
-  }
 
   .colorpalette{
     padding-top: 0;
@@ -823,23 +694,6 @@ p.tagline {
 
   .userflowbutton, .sitemapbutton {
     margin-top: 0;
-  }
-
-  .gothic, .moodspirelogo, .colorpalette, .wireframe {
-    width: 100%;
-  }
-
-  .topnav {
-    padding-left: 6rem;
-    grid-column-gap: 55.3rem;
-  }
-
-  .aboutphoto {
-    margin-top: -3.5rem;
-  }
-
-  .aboutspace {
-    padding-top: 3.5rem;
   }
 
   .iconlist li, .lasticonlist li {
