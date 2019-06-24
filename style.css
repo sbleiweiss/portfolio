@@ -16,22 +16,6 @@ body {
   width: 375px;
 }
 
-/*** .logo {
-  /***top right hand logomark***/
-  /*** clear:both;
-  display: inline-block;
-  float: left;
-} ***/
-
-/*** nav ul li {
-  /***navigation links***/
-  /**** display: inline-block;
-  float: right;
-  padding-right: 1.6rem;
-  padding-top: 3.8rem;
-} ***/
-
-
 .topnav {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -68,9 +52,6 @@ body {
   vertical-align: middle;
 }
 
-/*** .iconlist:last-child li{
-  padding-bottom: 0rem;
-} ***/
 
 .lasticonlist li {
   display: inline-block;
@@ -238,11 +219,6 @@ p.project1Pbottomspace {
   padding-left: 2rem;
 }
 
-/*** .blockquote {
-  color: #5D3C0E;
-  font-family: "Open sans", sans-serif;
-  padding-left: 2rem;
-} ***/
 
 nav.topnav {
   /*** top navigational styles***/
@@ -382,17 +358,21 @@ p.tagline {
   padding-top: 3.5rem;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 375px) {
   /***phone size***/
   .container {
-    width: 100%;
+    width: 375px;
+    }
+
+    .aboutphoto {
+      width: 90%;
     }
 }
 
 @media (min-width:768px) {
   /***tablet***/
   .container {
-    width: 100%;
+    width: 768px;
   }
 
   html {
@@ -401,59 +381,108 @@ p.tagline {
   }
 
   .topnav {
+    /* top navigation style */
     display: grid;
+    grid-column-gap: 35.8rem;
     grid-template-columns: 1fr 2fr;
-    grid-auto-rows: 10rem;
+
     position: absolute;
-    grid-column-gap: 50rem;
+    padding-left: 2.3rem;
+
   }
 
-  .navlinks {
-    display:grid;
-    grid-template-columns: 0.5fr 0.7fr 1fr;
-    grid-column-gap: 2.5rem;
-    padding-top: 3.5rem;
-  }
 
   .section{
-    padding-left: 5rem;
-    padding-right: 5rem;
+    /*general section styles */
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
 
-  .herolanding, .moodspireprojecthero, .roleoverview, .problemsolution, .userresearch, .companalysis, .userpersonas, .infoarchitecturesection, .userflowsstories, .prototypeandtestingsection, .visualdesign, .hifimockups, .testingrefinements, .conclusionsection, .abouthero, .aboutindetail {
+  .herolanding, .moodspireprojecthero, .heroheading,
+  .roleoverview, .problemsolution, .userresearch,
+  .companalysis, .userpersonas, .userpersonaquotebutton,
+  .infoarchitecturesection, .userflowsstories,
+  .prototypeandtestingsection, .visualdesign,
+  .conclusionsection, .abouthero{
+    /*sections that display grid*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 3rem;
+    grid-column-gap: 4rem;
   }
 
-  .pagehead, .intro, .passionate, .whysurvey, .pcompanalysis, .puserpersonas, .pinfoarchitecture, .userstories, .puserflowsstories, .pprototypeandtesting, .pcolors, .ptestingrefinements, .pagehead, .aboutPheadings, .pabouthero, .paboutdetailleft {
+  .pagehead, .intro, .passionate,
+  .pcompanalysis, .companalysistextbutton,
+  .puserpersonas, .pinfoarchitecture, .puserflowsstories,
+  .userstoriestextandbutton, .pprototypeandtesting,
+  .pcolors, .ptestingrefinements, .pagehead, .aboutPheadings,
+  .pabouthero, .paboutdetailleft {
     grid-column-start: 1;
     grid-column-end: 3;
   }
 
+  .whysurvey {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
 
 
-  .moodspirelanding, .tagline, .leftsidebutton, .roles, .problem, .solution, .process, .stages, .surveyresults, .userpersonaphoto, .userstoriesbutton, .keytakeawaytesting, .pvisualdesign, .gothic, .phifimockups, .actionitems, .actionlist, .actiontakeaway {
+  .moodspirelanding, .heroheading, .tagline,
+  .leftsidebutton, .roles, .problem, .solution,
+  .process, .stages, .surveyresults, .userpersonaphoto,
+  .keytakeawaytesting, .pvisualdesign,
+  .moodspireexplanationlogo, .gothic, .phifimockups,
+  .hifimockupsandbutton, .actionitems, .actionitems2,
+  .actionitems3, .actionlist, .actiontakeaway {
     grid-column-start: 1;
     grid-column-end: 2;
+  }
+
+  .heroheading, .moodspireexplanationlogo {
+    /* align button and hero images with text in the center */
+    align-content: start;
   }
 
   .deliverables, .centerbutton {
     grid-column-start: 2;
     grid-column-end: 3;
-
   }
 
-  .tools, .duration, .rightbutton, .companalysisSMicons, .gridphotoright, .companalysisimg {
+
+  .tools, .duration, .rightbutton, .companalysisSMicons,
+  .gridphotoright, .userstories, .userflowbutton {
     grid-column-start: 3;
     grid-column-end: 4;
   }
 
+  .userflowtextandbutton {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 
-  .pproblem, .psolution, .surveytakeaway, .userpersonaquote, .testingevidence, .logosketches, .ptypography, .conclusionli, .pindetailright, .gridphotorightlarge, .moodspiremockup {
+  .pproblem, .psolution, .surveytakeaway,
+  .userpersonaquote, .testingevidence,
+  .logosketches, .brandingprocess, .ptypography,
+  .conclusionli, .pindetailright, .gridphotorightlarge,
+  .moodspiremockup {
     grid-column-start: 2;
     grid-column-end: 4;
+  }
+
+ .pproblem, .psolution, .userpersonaphoto,
+ .userpersonaquotebutton, .problemsolved {
+    padding-top: 3.5rem;
+  }
+
+  .wireframe {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+
+  .majortakeawaylist {
+    padding-top: 1.5rem;
   }
 
   .gridphotorightlarge, .moodspiremockup {
@@ -469,6 +498,115 @@ p.tagline {
   }
   .pdeliverables, .ptools {
     grid-row-start: 2;
+  }
+
+  .quote, .surveytakeaway {
+  border-left: .4rem #D26526 solid;
+  padding-left: 3rem;
+  }
+
+  .wireframe {
+    /***wireframe image ***/
+    padding-top: 3rem;
+  }
+
+  .moodspirelogo {
+    display: inline;
+    padding-top: 3.5rem;
+  }
+
+  .testingimg{
+    /***hifi testing image***/
+    display: grid;
+    grid-auto-columns: minmax(auto, 1.57rem);
+    grid-gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  .testingquote{
+    /***testing section results quote ffrom css grid***/
+    align-self: center;
+  }
+
+  .testingexpl ul{
+    /***testing section results grid***/
+    grid-column-end: 3;
+    grid-column-start: 1;
+  }
+
+  .icons img {
+    /***social media footer icons ***/
+    width: 12%;
+  }
+
+  .companalysisSMicons li {
+    display: block;
+    width: 45%;
+    justify-content: center;
+  }
+
+  .companalysisSMicons {
+    padding-top: 0;
+  }
+
+  .instagrampadding {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .testingimgpadding {
+    padding-top: 4rem;
+  }
+
+  p.actiontakeaway {
+    padding-top: 4rem;
+  }
+
+  .actionitems2, .actionitems3, {
+    align-content: start;
+  }
+
+  p.surveytakeaway{
+    align-self: center;
+    padding-top: 0;
+  }
+
+  .wordassociation {
+    padding-bottom: 8rem;
+  }
+
+  .photospace {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .logosketches {
+    padding-bottom: 2rem;
+  }
+
+  .pcolors, .gothic  {
+    padding-top: 2rem;
+  }
+
+  a.button {
+    width: 25.4rem;
+  }
+
+  .userflowbutton, .sitemapbutton {
+    margin-top: 0;
+  }
+
+  .gothic, .moodspirelogo, .colorpalette, .wireframe {
+    width: 100%;
+  }
+
+  .aboutphoto {
+    margin-top: -3.5rem;
+  }
+
+  .aboutspace {
+    padding-top: 3.5rem;
   }
 
 }
@@ -510,20 +648,33 @@ p.tagline {
     display: inline-block;
   }
 
-  .herolanding, .moodspireprojecthero, .heroheading, .roleoverview, .problemsolution, .userresearch, .companalysis, .userpersonas, .userpersonaquotebutton, .infoarchitecturesection, .userflowsstories, .prototypeandtestingsection, .visualdesign, .hifimockups, .testingrefinements, .conclusionsection, .abouthero, .aboutindetail {
+  .herolanding, .moodspireprojecthero, .heroheading,
+  .roleoverview, .problemsolution, .userresearch,
+  .companalysis, .userpersonas, .userpersonaquotebutton,
+  .infoarchitecturesection, .userflowsstories,
+  .prototypeandtestingsection, .visualdesign, .hifimockups,
+  .testingrefinements, .conclusionsection, .abouthero, .aboutindetail {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 4rem;
   }
 
-  .pagehead, .intro, .passionate, .whysurvey, .pcompanalysis, .companalysistextbutton, .puserpersonas, .pinfoarchitecture, .puserflowsstories, .userstoriestextandbutton, .pprototypeandtesting, .pcolors, .ptestingrefinements, .pagehead, .aboutPheadings, .pabouthero, .paboutdetailleft {
+  .pagehead, .intro, .passionate, .whysurvey, .pcompanalysis,
+  .companalysistextbutton, .puserpersonas, .pinfoarchitecture,
+  .puserflowsstories, .userstoriestextandbutton, .pprototypeandtesting,
+  .pcolors, .ptestingrefinements, .pagehead, .aboutPheadings, .pabouthero,
+  .paboutdetailleft {
     grid-column-start: 1;
     grid-column-end: 3;
   }
 
 
 
-  .moodspirelanding, .heroheading, .tagline, .leftsidebutton, .roles, .problem, .solution, .process, .stages, .surveyresults, .userpersonaphoto, .keytakeawaytesting, .pvisualdesign, .moodspireexplanationlogo, .gothic, .phifimockups, .hifimockupsandbutton, .actionitems, .actionitems2, .actionitems3, .actionlist, .actiontakeaway {
+  .moodspirelanding, .heroheading, .tagline, .leftsidebutton,
+  .roles, .problem, .solution, .process, .stages, .surveyresults,
+  .userpersonaphoto, .keytakeawaytesting, .pvisualdesign,
+  .moodspireexplanationlogo, .gothic, .phifimockups, .hifimockupsandbutton,
+  .actionitems, .actionitems2, .actionitems3, .actionlist, .actiontakeaway {
     grid-column-start: 1;
     grid-column-end: 2;
   }
@@ -539,17 +690,27 @@ p.tagline {
   }
 
 
-  .tools, .duration, .rightbutton, .companalysisSMicons, .gridphotoright, .userstories {
+  .tools, .duration, .rightbutton, .companalysisSMicons,
+  .gridphotoright, .userstories, .userflowbutton {
     grid-column-start: 3;
     grid-column-end: 4;
   }
 
-  .pproblem, .psolution, .surveytakeaway, .userpersonaquote, .testingevidence, .logosketches, .brandingprocess, .ptypography, .conclusionli, .pindetailright, .gridphotorightlarge, .moodspiremockup {
+  .userflowtextandbutton {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .pproblem, .psolution, .surveytakeaway, .userpersonaquote,
+  .testingevidence, .logosketches, .brandingprocess, .ptypography,
+  .conclusionli, .pindetailright, .gridphotorightlarge, .moodspiremockup {
     grid-column-start: 2;
     grid-column-end: 4;
   }
 
- .pproblem, .psolution, .userpersonaphoto, .userpersonaquotebutton, .problemsolved {
+ .pproblem, .psolution, .userpersonaphoto, .userpersonaquotebutton,
+ .problemsolved {
     padding-top: 3.5rem;
   }
 
