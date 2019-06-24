@@ -358,6 +358,9 @@ p.tagline {
   padding-top: 3.5rem;
 }
 
+
+
+
 @media (min-width: 375px) {
   /***phone size***/
   .container {
@@ -368,23 +371,13 @@ p.tagline {
     width: 90%;
     }
 
-  .companalysis {
-    display: grid;
-    grid-template-columns: 1fr;
+  a.compabuttonlargescreen {
+    display: none;
+  }
 
-    }
-
-  .pcompanalysis {
-    order: 1;
-    }
-
-  .companalysisSMicons {
-    order: 2;
-    }
-
-  .compabutton {
-    order: 3;
-    }
+  a.userstorieslargescreenbutton {
+    display: none;
+  }
 
 }
 
@@ -398,6 +391,7 @@ p.tagline {
     /***base size***/
     font-size: 11px;
   }
+
 
   .topnav {
     /* top navigation style */
@@ -612,6 +606,15 @@ p.tagline {
     width: 25.4rem;
   }
 
+  a.compabuttonsmallscreen {
+    display: none;
+  }
+
+  a.userstoriessmallscreenbutton {
+    display: none;
+  }
+
+
   .userflowbutton, .sitemapbutton {
     margin-top: 0;
   }
@@ -710,6 +713,7 @@ p.tagline {
   a.button {
     width: 25.4rem;
   }
+
 
   .userflowbutton, .sitemapbutton {
     margin-top: 0;
