@@ -95,7 +95,10 @@ a.button {
   font-weight: bold;
   margin-bottom: 3.5rem;
   margin-top: 3.5rem;
-  padding: 1.25rem 10.3rem 1.25rem 10.3rem; /***for the button itself***/
+  /* padding: 1.25rem 10.3rem 1.25rem 10.3rem; /***for the button itself***/
+  padding-bottom: 1.25rem;
+  width: 33.5rem;
+  padding-top: 1.25rem;
   text-align: center;
   white-space: nowrap;
 }
@@ -505,9 +508,6 @@ p.tagline {
 
   a.button {
     display: inline-block;
-
-
-
   }
 
   .herolanding, .moodspireprojecthero, .heroheading, .roleoverview, .problemsolution, .userresearch, .companalysis, .userpersonas, .userpersonaquotebutton, .infoarchitecturesection, .userflowsstories, .prototypeandtestingsection, .visualdesign, .hifimockups, .testingrefinements, .conclusionsection, .abouthero, .aboutindetail {
@@ -551,6 +551,11 @@ p.tagline {
 
  .pproblem, .psolution, .userpersonaphoto, .userpersonaquotebutton, .problemsolved {
     padding-top: 3.5rem;
+  }
+
+  .wireframe {
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 
   .majortakeawaylist {
@@ -650,5 +655,37 @@ p.tagline {
   .pcolors {
     padding-top: 2rem;
   }
+
+  a.button {
+    width: 25.4rem;
+  }
+
+  .userflowbutton, .sitemapbutton {
+    margin-top: 0;
+  }
+
+  .gothic, .moodspirelogo, .colorpalette, .wireframe {
+    width: 100%;
+  }
+
+  .topnav {
+    padding-left: 6rem;
+    grid-column-gap: 55.3rem;
+  }
+
+  .aboutphoto {
+    margin-top: -3.5rem;
+  }
+
+  .aboutspace {
+    padding-top: 3.5rem;
+  }
+
+  .iconlist li, .lasticonlist li {
+    display: inline block;
+    width: 32%;
+    justify-content: center;
+  }
+
 
 }
