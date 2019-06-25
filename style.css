@@ -412,7 +412,6 @@ p.tagline {
 
     position: absolute;
     padding-left: 2.3rem;
-
   }
 
 
@@ -426,19 +425,21 @@ p.tagline {
   .herolanding, .moodspireprojecthero, .heroheading,
   .roleoverview, .problemsolution, .userresearch,
   .companalysis, .userpersonas, .userpersonaquotebutton,
-  .infoarchitecturesection, .userflowsstories,
+  .infoarchitecturesection, .userflowsstories, .userflowbutton,
   .prototypeandtestingsection, .visualdesign,
-  .conclusionsection, .abouthero{
+  .conclusionsection, .abouthero, .aboutindetail {
     /*sections that display grid*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 4rem;
   }
 
+
+
   .pagehead, .intro, .passionate,
   .pcompanalysis, .companalysistextbutton,
   .puserpersonas, .pinfoarchitecture, .puserflowsstories,
-  .userstoriestextandbutton, .pprototypeandtesting,
+  .userstoriestextandbutton, .userflowtextandbutton, .sitemapandbutton, .pprototypeandtesting,
   .pcolors, .ptestingrefinements, .pagehead, .aboutPheadings,
   .pabouthero, .paboutdetailleft {
     grid-column-start: 1;
@@ -449,6 +450,29 @@ p.tagline {
     grid-column-start: 1;
     grid-column-end: 4;
   }
+
+
+  .userflowtextandbutton {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .puserflowsstories {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .userflowbutton, .sitemapbutton {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  .sitemapandbutton {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+
+
 
 
   .moodspirelanding, .heroheading, .tagline,
@@ -479,11 +503,6 @@ p.tagline {
     grid-column-end: 4;
   }
 
-  .userflowtextandbutton {
-    grid-row-start: 3;
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
 
   .pproblem, .psolution, .surveytakeaway,
   .userpersonaquote, .testingevidence,
@@ -498,6 +517,16 @@ p.tagline {
  .userpersonaquotebutton, .problemsolved {
     padding-top: 3.5rem;
   }
+
+  .userpersonaquotebutton {
+    grid-column: span 2;
+  }
+
+  .userpersonabutton {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
 
   .wireframe {
     grid-column-start: 2;
@@ -626,6 +655,11 @@ p.tagline {
     width: 100%;
   }
 
+  a.hifibutton {
+    margin-bottom: 3.5rem;
+  }
+
+
   .aboutphoto {
     margin-top: -3.5rem;
   }
@@ -633,6 +667,36 @@ p.tagline {
   .aboutspace {
     padding-top: 3.5rem;
   }
+
+  .iconlist li {
+    width: 60%;
+  }
+
+  .begindesignicons {
+    margin-top: 3rem;
+  }
+
+  .educationicons {
+    margin-top: -46rem;
+  }
+
+  .techanddesignicons {
+    margin-top: -4rem;
+    width: 90%;
+  }
+
+  .growuxicons {
+    margin-top: -39rem;
+  }
+
+  .finaluxicons {
+    margin-top: -36rem;
+  }
+
+  .hihero {
+    padding-bottom:0;
+  }
+
 
 }
 
