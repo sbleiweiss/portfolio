@@ -466,6 +466,7 @@ p.tagline {
   .userflowbutton, .sitemapbutton {
     grid-column-start: 3;
     grid-column-end: 4;
+    align-self: center;
   }
 
   .sitemapandbutton, .userflowtextandbutton {
@@ -522,8 +523,9 @@ p.tagline {
   }
 
   .userpersonaquotebutton {
-    grid-column: span 2;
+    grid-column: span 3;
   }
+
 
   .userpersonabutton {
     grid-column-start: 2;
