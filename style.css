@@ -358,9 +358,6 @@ p.tagline {
   padding-top: 3.5rem;
 }
 
-
-
-
 @media (min-width: 375px) {
   /***phone size***/
   .container {
@@ -371,12 +368,26 @@ p.tagline {
     width: 90%;
     }
 
-  a.compabuttonlargescreen {
-    display: none;
+  .companalysis {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
-  a.userstorieslargescreenbutton {
-    display: none;
+  .companalysisSMicons {
+    grid-row-start: 2;
+    padding-top: 0;
+    padding-bottom: 2rem;
+  }
+
+  .infoarchitecturesection {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .userstories {
+    grid-row-start: 3;
+    padding-bottom: 2rem;
+    padding-top: 0;
   }
 
 }
@@ -606,14 +617,6 @@ p.tagline {
     width: 25.4rem;
   }
 
-  a.compabuttonsmallscreen {
-    display: none;
-  }
-
-  a.userstoriessmallscreenbutton {
-    display: none;
-  }
-
 
   .userflowbutton, .sitemapbutton {
     margin-top: 0;
@@ -669,6 +672,7 @@ p.tagline {
 
   a.button {
     display: inline-block;
+    width: 25.4rem;
   }
 
   .hifimockups, .testingrefinements, .aboutindetail {
@@ -710,9 +714,6 @@ p.tagline {
     padding-top: 2rem;
   }
 
-  a.button {
-    width: 25.4rem;
-  }
 
 
   .userflowbutton, .sitemapbutton {
