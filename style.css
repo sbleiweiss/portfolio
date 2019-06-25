@@ -452,23 +452,26 @@ p.tagline {
   }
 
 
-  .userflowtextandbutton {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+  .userflowtextandbutton, .sitemapandbutton {
+    grid-column: span 4;
   }
+
 
   .puserflowsstories {
     grid-column-start: 1;
     grid-column-end: 3;
+    align-self: end;
   }
 
   .userflowbutton, .sitemapbutton {
     grid-column-start: 3;
     grid-column-end: 4;
   }
-  .sitemapandbutton {
+
+  .sitemapandbutton, .userflowtextandbutton {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-column-gap: 4rem;
   }
 
 
