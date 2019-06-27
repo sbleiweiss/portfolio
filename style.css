@@ -21,16 +21,19 @@ body {
 .topnav {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-auto-rows: 10rem;
   position: absolute;
   grid-column-gap: 7.5rem;
 }
 
 .navlinks {
-  display:grid;
-  grid-template-columns: 0.5fr 0.7fr 1fr;
-  grid-column-gap: 1.5rem;
-  padding-top: 3.5rem;
+  display:flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navlinks li {
+  margin-left: 1rem;
 }
 
 
@@ -482,6 +485,17 @@ p.tagline {
     width: 100%;
   }
 
+  .navlinks {
+    display:flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .navlinks li {
+    margin-left: 2rem;
+  }
+
 
   .section{
     /*general section styles */
@@ -813,11 +827,12 @@ p.tagline {
   }
 
   .navlinks {
-    display:grid;
-    grid-template-columns: 0.5fr 0.7fr 1fr;
-    grid-column-gap: 2.5rem;
-    padding-top: 3.5rem;
+    display:flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: flex-end;
+    align-items: center;
   }
+
 
   .section{
     padding-left: 16%;
