@@ -377,10 +377,11 @@ p.tagline {
   .topnav {
     grid-column-gap: 7.8rem;
     width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .logo {
-    padding-left: .3rem;
     max-width: 10rem;
   }
 
@@ -476,8 +477,11 @@ p.tagline {
     grid-column-gap: 29.8rem;
     grid-template-columns: 1fr 2fr;
     position: absolute;
-    padding-left: 5.3rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
   }
+
 
   .section{
     /*general section styles */
@@ -804,7 +808,8 @@ p.tagline {
     grid-column-gap: 32rem;
     grid-auto-rows: 10rem;
     position: absolute;
-    padding-left: 18.5rem;
+    padding-left: 16%;
+    padding-right: 16%;
   }
 
   .navlinks {
