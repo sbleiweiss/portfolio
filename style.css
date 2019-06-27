@@ -63,7 +63,7 @@ body {
 a{
   /***link color***/
   color: #D26526;
-  font-family: "Open sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-decoration: none;
 }
 
@@ -86,6 +86,12 @@ a.button {
   white-space: nowrap;
 }
 
+a.button:hover {
+  color: #FFFFFF;
+  background-color: #E9BCA3;
+  border: #E9BCA3;
+}
+
 /* .button:last-child {
   /*** adjust buton spacing at the bottom to not double up on section padding***/
 /*  margin-bottom: 1rem;
@@ -95,7 +101,7 @@ section, footer, nav.topnav {
   /***general styles set brown, open sans font***/
   /* background-color: #FFFDFD;/***lighter white***/
   color: #5D3C0E;
-  font-family: "Open sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   /* padding: 3.5rem 2rem; */
 }
 
@@ -272,7 +278,7 @@ p, ul {
 h1.pagehead {
   /***yellow largest header***/
   color: #EB9A28;
-  font-family: "Noto Serif", serif;
+  font-family: 'Noto Serif', serif;
   font-size: 3rem;
   font-weight: bold;
   padding-bottom: 3.5rem;
@@ -282,7 +288,7 @@ h1.pagehead {
 h2.process {
   /*** discovery & research, info architecture, prototype & testing, visual design, conclusion ***/
   color: #EB9A28;
-  font-family: "Noto Serif", serif;
+  font-family: 'Noto Serif', serif;
   font-size: 3.125rem;
   font-weight: bold;
   /* padding-top: 3.5rem; */
@@ -292,7 +298,7 @@ h2.process {
 h3.stages, .problem, .solution, .process, .processoverview {
 /*** user survey, comp analysis, user personas, etc ***/
 color: #EB9A28;
-font-family: "Noto Serif", serif;
+font-family: 'Noto Serif', serif;
 font-size: 2.5rem;
 font-weight: bold;
 padding-bottom: 3.5rem;
@@ -302,12 +308,6 @@ padding-top: 3.5rem;
 .processlist li {
   /**orange bold process list***/
   color: #D26526;
-}
-
-.surveyresults li{
-  /***results of survey section***/
-  margin-bottom: 2rem;
-  margin-top: 2rem;
 }
 
 
@@ -349,11 +349,14 @@ p.tagline {
   padding-left: 3rem;
 }
 
+.processlinkspace li {
+  padding-bottom: .8rem;
+}
 
 .moodspirelanding {
   /***moodspire text on landing page***/
   color: #EB9A28;
-  font-family: "Noto Serif", serif;
+  font-family: 'Noto Serif', serif;
   font-size: 3rem;
   font-weight: bold;
   padding-bottom: 1.9rem;
@@ -363,8 +366,21 @@ p.tagline {
 @media (min-width: 375px) {
   /***phone size***/
   .container {
-    width: 375px;
+    width: 100%;
     }
+
+  .section {
+    padding-left: 5%;
+    padding-right: 5%;
+    }
+
+  .topnav {
+    grid-column-gap: 7.8rem;
+  }
+
+  .logo {
+    padding-left: .3rem;
+  }
 
   .aboutphoto {
     width: 90%;
@@ -433,12 +449,18 @@ p.tagline {
     padding-bottom:0;
   }
 
+  .surveyresults li{
+    /***results of survey section***/
+    margin-bottom: 0;
+    margin-top: 2rem;
+  }
+
 }
 
 @media (min-width:768px) {
   /***tablet***/
   .container {
-    width: 768px;
+    width: 100%;
   }
 
   html {
@@ -449,17 +471,31 @@ p.tagline {
   .topnav {
     /* top navigation style */
     display: grid;
-    grid-column-gap: 35.8rem;
+    grid-column-gap: 29.8rem;
     grid-template-columns: 1fr 2fr;
     position: absolute;
-    padding-left: 2.3rem;
+    padding-left: 5.3rem;
   }
 
   .section{
     /*general section styles */
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 10%;
+    padding-right: 10%;
   }
+
+  footer {
+    padding-left: 10%;
+  }
+
+  .surveyresultsspace {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .surveyresults li{
+    margin-bottom: 0rem;
+  }
+
 
   .herolanding, .moodspireprojecthero, .heroheading,
   .roleoverview, .problemsolution, .userresearch,
@@ -519,7 +555,6 @@ p.tagline {
   .puserflowsstories {
     padding-bottom: 2rem;
   }
-
 
   .moodspirelanding, .heroheading, .tagline,
   .leftsidebutton, .roles, .problem, .solution,
@@ -752,22 +787,22 @@ p.tagline {
 @media (min-width: 1200px) {
   /***desktop size***/
   .container {
-    width: 1200px;
+    width: 100%;
     background-color: white;
   }
 
   html {
     /***base size***/
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .topnav {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-column-gap: 55.3rem;
+    grid-column-gap: 32rem;
     grid-auto-rows: 10rem;
     position: absolute;
-    padding-left: 6rem;
+    padding-left: 18.5rem;
   }
 
   .navlinks {
@@ -778,14 +813,19 @@ p.tagline {
   }
 
   .section{
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: 16%;
+    padding-right: 16%;
+  }
+
+  footer {
+    padding-left: 16%;
   }
 
   a.button {
     display: inline-block;
     width: 25.4rem;
   }
+
 
   .hifimockups, .testingrefinements, .aboutindetail {
     display: grid;
@@ -814,7 +854,7 @@ p.tagline {
   .companalysisSMicons li {
     display: block;
     justify-content: center;
-    width: 36%;
+    width: 32%;
   }
 
   a.userpersonabutton {
