@@ -376,10 +376,12 @@ p.tagline {
 
   .topnav {
     grid-column-gap: 7.8rem;
+    width: 100%;
   }
 
   .logo {
     padding-left: .3rem;
+    max-width: 10rem;
   }
 
   .aboutphoto {
