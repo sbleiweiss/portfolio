@@ -89,9 +89,9 @@ a.button {
 }
 
 a.button:hover {
-  color: #FFFFFF;
-  background-color: #E9BCA3;
-  border: #E9BCA3;
+  color: #D26526;
+  background-color: #FFFFFF;
+  border: #D26526 solid .35rem;
 }
 
 /* .button:last-child {
@@ -390,7 +390,7 @@ p.tagline {
 
 
   .aboutphoto {
-    width: 90%;
+    width: 35rem;
     }
 
   .companalysis {
@@ -428,7 +428,9 @@ p.tagline {
   .userpersonaphoto {
     padding-bottom: 2rem;
     padding-top: 2rem;
+    width: 33.9rem;
   }
+
 
   a.userstoriesbutton {
     margin-top: 1rem;
@@ -444,7 +446,11 @@ p.tagline {
   }
 
   .colorpalette {
-    width: 100%;
+    width: 30rem;
+  }
+
+  .gothic {
+    width: 30rem;
   }
 
   a.hifibutton {
@@ -464,6 +470,10 @@ p.tagline {
 
   .companalysisSMicons li {
     width: 9rem;
+  }
+
+  .icons img {
+    width: 8rem;
   }
 
 }
@@ -700,7 +710,7 @@ p.tagline {
 
   .icons img {
     /***social media footer icons ***/
-    width: 12%;
+    width: 8rem;
   }
 
   .companalysisSMicons li {
@@ -874,7 +884,7 @@ p.tagline {
 
   .icons img {
     /***footer icons ***/
-    width: 8%;
+    width: 8rem;
   }
 
   .companalysisSMicons li {
