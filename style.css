@@ -931,7 +931,7 @@ p.tagline {
   .iconlist li, .lasticonlist li {
     display: inline-block;
     justify-content: center;
-    width: 32%;
+    width: 31%;
   }
 
   .begindesignicons {
@@ -951,7 +951,7 @@ p.tagline {
   }
 
   .finaluxicons {
-    margin-top: -21rem;
+    margin-top: -20rem;
   }
 
 }
