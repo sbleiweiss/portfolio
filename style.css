@@ -36,32 +36,6 @@ body {
 }
 
 
-#abticonlist{
-/*** icons on about page***/
-  padding: 0;
-  text-align: center;
-}
-
-.iconlist li{
-  /*** icons on about page***/
-  display: inline-block;
-  padding-bottom: 2.5rem;
-  padding-right: 2rem;
-  padding-top: 2.5rem;
-  width: 28%;
-}
-
-.iconlist img {
-  /**about me icons***/
-  vertical-align: middle;
-}
-
-
-.lasticonlist li {
-  display: inline-block;
-  padding-bottom: 0rem;
-}
-
 a{
   /***link color***/
   color: #D26526;
@@ -476,6 +450,33 @@ p.tagline {
     width: 8rem;
   }
 
+  #abticonlist{
+  /*** icons on about page***/
+    padding: 0;
+    text-align: center;
+  }
+
+  .iconlist li{
+    /*** icons on about page***/
+    display: inline-block;
+    padding-bottom: 2.5rem;
+    padding-right: 2rem;
+    padding-top: 2.5rem;
+    width: 8rem;
+  }
+
+  .iconlist img {
+    /**about me icons***/
+    vertical-align: middle;
+  }
+
+
+  .lasticonlist li {
+    display: inline-block;
+    padding-bottom: 0rem;
+  }
+
+
 }
 
 @media (min-width:768px) {
@@ -716,7 +717,7 @@ p.tagline {
   .companalysisSMicons li {
     display: block;
     justify-content: center;
-    width: 45%;
+    width: 8rem;
   }
 
   .companalysisSMicons {
@@ -762,6 +763,14 @@ p.tagline {
     padding-top: 2rem;
   }
 
+  h3.colors {
+    padding-bottom: 1rem;
+  }
+
+  h3.typography {
+    padding-bottom: 2rem;
+  }
+
   a.button {
     width: 16rem;
     white-space: pre-wrap;
@@ -787,12 +796,13 @@ p.tagline {
     padding-top: 3.5rem;
   }
 
-  .iconlist li {
-    width: 50%;
+  .iconlist li, .lasticonlist li {
+    width: 8rem;
+    display: block;
   }
 
   .begindesignicons {
-    margin-top: 3rem;
+    margin-top: 9rem;
   }
 
   .educationicons {
@@ -800,7 +810,7 @@ p.tagline {
   }
 
   .techanddesignicons {
-    margin-top: -4rem;
+    margin-top: 1rem;
     width: 90%;
   }
 
@@ -814,6 +824,10 @@ p.tagline {
 
   .hihero {
     padding-bottom:0;
+  }
+
+  .workbuttonright {
+    grid-column-start: 3;
   }
 
 }
@@ -890,7 +904,7 @@ p.tagline {
   .companalysisSMicons li {
     display: block;
     justify-content: center;
-    width: 32%;
+    width: 7rem;
   }
 
   a.userpersonabutton {
