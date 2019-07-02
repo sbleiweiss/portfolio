@@ -3,7 +3,8 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
+    <meta charset="UTF-8">
+    <title>Sarah Bleiweiss | About me</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap" rel="stylesheet">
@@ -12,12 +13,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142994119-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-
         function gtag() {
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
-
         gtag('config', 'UA-142994119-1');
     </script>
 
@@ -25,6 +24,7 @@
 
 <body>
     <div class="container">
+      <header>
         <nav class="topnav">
             <a class="logo" href="index.html"><img src="images/logo.svg" alt="logo"></a>
             <ul class="navlinks">
@@ -33,68 +33,76 @@
                 <li><a href="images/bleiweiss-resume.pdf" target="_blank">Resume</a></li>
             </ul>
         </nav>
-
-        <section class="section abouthero">
+      </header>
+    <main>
+        <section class="section abouthero aboutmebglight">
             <!--tldr-->
             <h1 id="top" class="pagehead">Nice to meet you!</h1>
-            <p class="aboutPheadings"><b>tl;dr &mdash;</b></p>
+            <h3 class="aboutPheadings">tl;dr &mdash;</h3>
             <p class="pabouthero">I’m Sarah. I’m a Denver based UI / UX designer who cares deeply about improving everyday experiences for real people through design. From neuroscience &amp; psychology to education to the tech &amp; design industry, I’ve finally found the place where my strengths and interests intersect.</p>
             <img src="images/about-me-photo.png" srcset="images/about-me-photo.png 1x, images/about-me-photo@2x.png 2x" alt="about me photo" class="center aboutphoto">
         </section>
 
-        <section class="section aboutindetail">
+        <section class="section aboutindetail aboutmebgdark">
             <!--longer version-->
-            <p class="how">How did I get here?</p>
-            <p class="aboutPheadings paboutdetailleft"><b>From biology to psychology to a peek at a new world of design...</b></p>
+            <h2 class="how">How did I get here?</h2>
+            <h3 class="aboutPheadings paboutdetailleft">From biology to psychology to a peek at a new world of design...</h3>
             <p class="paboutdetailleft">The first official design course I took wasn’t until my senior year of college. Before then, I had focused heavily on science; from cellular &amp; molecular biology to organic chemistry to physiology, I loved the challenge of learning the complexities of our own bodies and the world we live in but I craved the broader picture of how that tied in with our own behavior and actions we take in the world. It wasn’t until I took my first psychology class that I found the intersection of both science and human behavior that I was looking for. I spent the rest of college immersing myself in neuroscience classes and behavioral psychology courses, understanding the way in which our brains connect us with others and the world around us. I loved every minute of it. And then, my senior year, I took a design course. We worked with the Adobe Creative Suite and my eyes were opened to a whole new world. That college course opened my eyes to digital design and I spent hours on both academic and personal projects in Photoshop and Illustrator.</p>
-            <div id="abticonlist">
+            <div class="abticonlist">
                 <ul class="iconlist begindesignicons">
                     <li><img src="images/bio-icon.svg" alt="bio icon"></li>
                     <li><img src="images/psych-icon.svg" alt="psych icon"></li>
                     <li><img src="images/illustrator-icon.svg" alt="illustrator icon"></li>
                 </ul>
             </div>
-            <p class="aboutPheadings pindetailright aboutspace"><b>What I loved and learned about education...</b></p>
+          </section>
+          <section class="section aboutindetail aboutmebgdark">
+            <h3 class="aboutPheadings pindetailright aboutspace">What I loved and learned about education...</h3>
             <p class="pindetailright">What could have happened if I took that design course my first year of college instead of my last? I graduated with a degree in Psychology, put my interests for the hard sciences side stage, and put my passion for working with and for people center stage. I started a career in education. From working with special education students to teaching a class of 25 Kindergarten students, teaching encompassed some of my biggest strengths: understanding the needs of my students, advocating for those needs, and articulating and leading creative lessons to engage students. Working with people and supporting young students, particularly in communities in need, was the main reason I chose to work in education; I loved seeing and hearing the perspectives and creativity from my students. However, being an educator is more than engaging daily lessons and building strong relationships and the standardized exams and systematic gaps put in place required me to take a step back.</p>
-            <div id="abticonlist">
+            <div class="abticonlist abticonlistright">
                 <ul class="iconlist educationicons">
                     <li><img src="images/apple-icon.svg" alt="apple icon"></li>
                     <li><img src="images/heart-icon.svg" alt="heart icon"></li>
                     <li><img src="images/students-icon.svg" alt="students icon"></li>
                 </ul>
             </div>
-            <p class="aboutPheadings paboutdetailleft aboutspace"><b>Searching for my place in the tech and design industry...</b></p>
+          </section>
+          <section class="section aboutindetail aboutmebgdark">
+            <h3 class="aboutPheadings paboutdetailleft aboutspace">Searching for my place in the tech and design industry...</h3>
             <p class="paboutdetailleft">I grounded myself in my strengths and let myself explore my interests. I couldn’t shake that design course I took in college. I wasn’t ready to stop working with and for people and landed a job working supporting clients for an online global creative marketplace. It blended my desire to build human connections, work to understand their needs, construct a solution together in a world of digital design. Working 40 hours a week ensuring that my clients received beautiful logo designs, thoughtful web and app designs, and illustrations that told captivating stories, I wondered if there was a place for me on the other side: the designer.</p>
-            <div id="abticonlist">
+            <div class="abticonlist">
                 <ul class="iconlist techanddesignicons">
                     <li><img src="images/design-icon.svg" alt="design icon"></li>
                     <li><img src="images/thought-icon.svg" alt="thought icon"></li>
                     <li><img src="images/world-icon.svg" alt="world icon"></li>
                 </ul>
             </div>
-            <p class="aboutPheadings pindetailright aboutspace"><b>Early mornings and late nights taking time to grow...</b></p>
+          </section>
+          <section class="section aboutindetail aboutmebgdark">
+            <h3 class="aboutPheadings pindetailright aboutspace">Early mornings and late nights taking time to grow...</h3>
             <p class="pindetailright">I had been pursuing graphic design personal projects on the side but it wasn’t until I found UX design that I knew I had found my place. A field dedicated to finding creative, innovative and meaningful solutions for real people: the intersection of digital design grounded in human needs and behavior. I knew that to truly transition into the field, it would take dedication, commitment and persistence. I enrolled in Bloc’s User Experience Design program, ready to give it my all. While working full time, I fell in love with UX design working extra hours in the morning and evening to develop my skills in visual design, the UX design process and front end development.</p>
-            <div id="abticonlist">
+            <div class="abticonlist abticonlistright">
                 <ul class="iconlist growuxicons">
                     <li><img src="images/sun-icon.svg" alt="sun icon"></li>
                     <li><img src="images/code-icon.svg" alt="code icon"></li>
                     <li><img src="images/night-icon.svg" alt="night icon"></li>
                 </ul>
             </div>
-
-            <p class="aboutPheadings paboutdetailleft aboutspace"><b>Blossomed. Just the right balance.</b></p>
+          </section>
+          <section class="section aboutindetail aboutmebgdark">
+            <h3 class="aboutPheadings paboutdetailleft aboutspace">Blossomed. Just the right balance.</h3>
             <p class="paboutdetailleft">Studying biology taught me how to persevere through challenging topics with inquiry and patience, while psychology exposed me to the rewarding feeling of approaching a field with passion and enthusiasm. Education strengthened my leadership skills, as I advocated for my students and collaborated with teachers, families, and communities, while working in the tech industry as Client Support Specialist honed my ability to quickly build relationships through empathy and positivity, and to provide thoughtful and responsive solutions. For a long time I believed that creativity and analytical thinking could not be part of a single career. UX design is the place intersecting all of my passions, interests, and skill sets. I’m thankful for every experience I’ve had that has that has brought me here.</p>
             <p class="paboutdetailleft"><b>UI &amp; UX design: I’m here to stay.</b></p>
-            <div id="abticonlist">
+            <div class="abticonlist abticonlistfinal">
                 <ul class="lasticonlist finaluxicons">
                     <li><img src="images/path-icon.svg" alt="path icon"></li>
                     <li><img src="images/intersection-icon.svg" alt="intersection icon"></li>
                     <li><img src="images/growth-leaf-icon.svg" alt="growth leaf icon"></li>
                 </ul>
             </div>
-            <a href="#top" class="button backtotopbutton">Back to top</a>
-
+          <a href="#top" class="button backtotopbutton">Back to top</a>
         </section>
+      </main>
 
         <footer>
             <p class="hello">Say hello!</p>

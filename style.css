@@ -172,17 +172,21 @@ p.hello {
   font-weight: bold;
 }
 
-p.how {
+h2.how {
   /***how did I get here? about page ***/
   color: #D26526;
   font-weight: bold;
+  font-size: 1.6rem;
   padding-bottom: 3.5rem;
   padding-top: 3.5rem;
 }
 
-p.aboutPheadings {
+h3.aboutPheadings {
   /*** space about 'about' page subeadings ***/
+  font-size: 1.6rem;
+  font-weight: bold;
   padding-bottom: 1rem;
+
 }
 
 p.project1Ptopspace {
@@ -450,13 +454,13 @@ p.tagline {
     width: 8rem;
   }
 
-  #abticonlist{
+  .abticonlist{
   /*** icons on about page***/
     padding: 0;
     text-align: center;
   }
 
-  .iconlist li{
+  .iconlist li, .lasticonlist li{
     /*** icons on about page***/
     display: inline-block;
     padding-bottom: 2.5rem;
@@ -799,9 +803,33 @@ p.tagline {
   .iconlist li, .lasticonlist li {
     width: 8rem;
     display: block;
+    padding-top: 0;
   }
 
-  .begindesignicons {
+  .abticonlistright{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-content: end;
+  }
+
+  .abticonlistfinal {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+
+  .aboutmebglight {
+    background-color: #FFFDFD !important;
+  }
+
+  .aboutmebgdark {
+    background-color: #F9F6F6 !important;
+  }
+
+  /* .begindesignicons {
     margin-top: 9rem;
   }
 
@@ -809,18 +837,22 @@ p.tagline {
     margin-top: -46rem;
   }
 
+
   .techanddesignicons {
     margin-top: 1rem;
     width: 90%;
   }
 
-  .growuxicons {
+   .growuxicons {
     margin-top: -39rem;
   }
 
   .finaluxicons {
     margin-top: -36rem;
   }
+  */
+
+
 
   .hihero {
     padding-bottom:0;
@@ -833,6 +865,7 @@ p.tagline {
   a.backtotopbutton {
     margin-bottom: 1rem;
   }
+
 
 }
 
@@ -934,7 +967,7 @@ p.tagline {
     width: 31%;
   }
 
-  .begindesignicons {
+  /* .begindesignicons {
     margin-top: 10rem;
   }
 
@@ -952,6 +985,6 @@ p.tagline {
 
   .finaluxicons {
     margin-top: -20rem;
-  }
+  }*/
 
 }
