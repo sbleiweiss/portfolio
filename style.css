@@ -434,7 +434,7 @@ p.tagline {
   .userpersonaphoto {
     padding-bottom: 2rem;
     padding-top: 2rem;
-    width: 33.9rem;
+    width: 31.9rem;
   }
 
   .infoarchitecturesection {
@@ -550,6 +550,12 @@ p.tagline {
 
   .companalysisSMicons li {
     width: 9rem;
+  }
+
+  .userpersonaphoto {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    width: 33.9rem;
   }
 
   a.backtotopbutton {
