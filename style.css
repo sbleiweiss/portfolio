@@ -236,7 +236,7 @@ img {
   /***video styles***/
   /* width: 100%;
   height: 100%;
-}*/ 
+}*/
 
 
 p.designerrole {
@@ -487,6 +487,8 @@ p.tagline {
     margin-top: 1rem;
   }
 
+  .refinedhifimockupimg, video {
+    width: 22rem;
 
 }
 
