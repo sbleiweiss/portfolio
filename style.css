@@ -348,18 +348,16 @@ p.tagline {
   padding-top: 3.5rem;
 }
 
-
-
-@media (min-width: 375px) {
-  /***phone size***/
+@media (min-width: 320px) {
+  /***phone size iPhone 5/SE/Galaxy S9***/
   .container {
     width: 100%;
-    }
+  }
 
-  .section {
-    padding-left: 5%;
-    padding-right: 5%;
-    }
+  html {
+    /***base size***/
+    font-size: 9px;
+  }
 
   .topnav {
     /* grid-column-gap: 7.8rem;*/
@@ -368,10 +366,56 @@ p.tagline {
     padding-right: 5%;
   }
 
+  a.button {
+    width: 31.8rem;
+    border-width: .2rem;
+  }
 
-  .aboutphoto {
-    width: 35rem;
-    }
+  .colorpalette, .moodspirelogo, .aboutphoto, .gothic {
+    width: 25rem;
+  }
+
+  .icons img {
+    width: 8rem;
+  }
+
+  .abticonlist{
+  /*** icons on about page***/
+    padding: 0;
+    text-align: center;
+  }
+
+  .iconlist li, .lasticonlist li{
+    /*** icons on about page***/
+    display: inline-block;
+    padding-right: 2rem;
+    padding-top: 2.5rem;
+    width: 8rem;
+  }
+
+  .iconlist img {
+    /**about me icons***/
+    vertical-align: middle;
+  }
+
+  .surveyresults li{
+    /***results of survey section***/
+    margin-bottom: 0;
+    margin-top: 2rem;
+  }
+
+  .lasticonlist li {
+    display: inline-block;
+    padding-bottom: 0rem;
+  }
+
+  .aboutmebglight {
+    background-color: #FFFDFD !important;
+  }
+
+  .aboutmebgdark {
+    background-color: #F9F6F6 !important;
+  }
 
   .companalysis {
     display: grid;
@@ -382,6 +426,16 @@ p.tagline {
     grid-row-start: 2;
     padding-bottom: 2rem;
     padding-top: 0;
+  }
+
+  .companalysisSMicons li {
+    width: 8rem;
+  }
+
+  .userpersonaphoto {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    width: 33.9rem;
   }
 
   .infoarchitecturesection {
@@ -405,31 +459,76 @@ p.tagline {
     margin-bottom: 1rem;
   }
 
-  .userpersonaphoto {
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-    width: 33.9rem;
-  }
-
-
-  a.userstoriesbutton {
-    margin-top: 1rem;
-  }
-
   .moodspirelogo, .logosketches {
     padding-bottom: 2rem;
     padding-top: 2rem;
+  }
+
+  .infoarchitecturesection {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .userstories {
+    grid-row-start: 3;
+    padding-bottom: 2rem;
+    padding-top: 0;
   }
 
   .lastsketch {
     padding-bottom: 0;
   }
 
-  .colorpalette {
-    width: 30rem;
+  a.userstoriesbutton {
+    margin-top: 1rem;
   }
 
-  .gothic {
+  .hifibutton {
+    margin-top: 1rem;
+  }
+
+
+}
+
+
+@media (min-width: 375px) {
+  /***phone size***/
+  .container {
+    width: 100%;
+    }
+
+    html {
+      /***base size***/
+      font-size: 10px;
+    }
+
+  .section {
+    padding-left: 5%;
+    padding-right: 5%;
+    }
+
+  .topnav {
+    /* grid-column-gap: 7.8rem;*/
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .aboutphoto {
+    width: 35rem;
+    }
+
+  a.prototypebutton {
+    margin-bottom: 3.5rem;
+  }
+
+  a.compabutton, a.userpersonabutton,
+  a.userstoriesbutton, a.sitemapbutton,
+  a.styleguidebutton {
+    margin-bottom: 1rem;
+  }
+
+  .colorpalette, .gothic {
     width: 30rem;
   }
 
@@ -438,58 +537,21 @@ p.tagline {
     margin-top: 1rem;
   }
 
-  .hihero {
-    padding-bottom:0;
+  a.button {
+    width: 33.8rem;
   }
 
-  .surveyresults li{
-    /***results of survey section***/
-    margin-bottom: 0;
-    margin-top: 2rem;
+  .hihero {
+    padding-bottom:0;
   }
 
   .companalysisSMicons li {
     width: 9rem;
   }
 
-  .icons img {
-    width: 8rem;
+  a.backtotopbutton {
+    margin-bottom: 1rem;
   }
-
-  .abticonlist{
-  /*** icons on about page***/
-    padding: 0;
-    text-align: center;
-  }
-
-  .iconlist li, .lasticonlist li{
-    /*** icons on about page***/
-    display: inline-block;
-    padding-bottom: 2.5rem;
-    padding-right: 2rem;
-    padding-top: 2.5rem;
-    width: 8rem;
-  }
-
-  .iconlist img {
-    /**about me icons***/
-    vertical-align: middle;
-  }
-
-
-  .lasticonlist li {
-    display: inline-block;
-    padding-bottom: 0rem;
-  }
-
-  .aboutmebglight {
-    background-color: #FFFDFD !important;
-  }
-
-  .aboutmebgdark {
-    background-color: #F9F6F6 !important;
-  }
-
 
 }
 
@@ -806,6 +868,7 @@ p.tagline {
     margin-top: -3.5rem;
   }
 
+
   .aboutspace {
     padding-top: 3.5rem;
   }
@@ -814,6 +877,11 @@ p.tagline {
     width: 8rem;
     display: block;
     padding-top: 0;
+    padding-bottom: 2.5rem;
+  }
+
+  .lasticonlist li {
+    padding-bottom: 0;
   }
 
   .abticonlist {
