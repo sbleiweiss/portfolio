@@ -232,11 +232,10 @@ img {
   width: 100%;
 }
 
-/* video {
+video {
   /***video styles***/
-  /* width: 100%;
-  height: 100%;
-}*/
+  width: 100%;
+}
 
 
 p.designerrole {
@@ -487,8 +486,6 @@ p.tagline {
     margin-top: 1rem;
   }
 
-  .refinedhifimockupimg, video {
-    width: 22rem;
 
 }
 
