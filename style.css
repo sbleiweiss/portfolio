@@ -234,8 +234,8 @@ img {
 
 video {
   /***video styles***/
-max-width: 100%;
-max-height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -347,6 +347,8 @@ p.tagline {
   padding-bottom: 1.9rem;
   padding-top: 3.5rem;
 }
+
+
 
 @media (min-width: 375px) {
   /***phone size***/
@@ -478,6 +480,14 @@ p.tagline {
   .lasticonlist li {
     display: inline-block;
     padding-bottom: 0rem;
+  }
+
+  .aboutmebglight {
+    background-color: #FFFDFD !important;
+  }
+
+  .aboutmebgdark {
+    background-color: #F9F6F6 !important;
   }
 
 
@@ -696,7 +706,7 @@ p.tagline {
     /***hifi testing image***/
     display: grid;
     grid-auto-columns: minmax(auto, 1.57rem);
-    grid-column-gap: 4rem;
+    grid-column-gap: 0;
     grid-row-gap: 2rem;
     grid-template-columns: 1fr 1fr;
 
@@ -827,41 +837,8 @@ p.tagline {
     grid-row-start: 2;
     grid-row-end: 4;
     align-self: center;
-    justify-self: center; 
+    justify-self: center;
   }
-
-  .aboutmebglight {
-    background-color: #FFFDFD !important;
-  }
-
-  .aboutmebgdark {
-    background-color: #F9F6F6 !important;
-  }
-
-  /* .begindesignicons {
-    margin-top: 9rem;
-  }
-
-  .educationicons {
-    margin-top: -46rem;
-  }
-
-
-  .techanddesignicons {
-    margin-top: 1rem;
-    width: 90%;
-  }
-
-   .growuxicons {
-    margin-top: -39rem;
-  }
-
-  .finaluxicons {
-    margin-top: -36rem;
-  }
-  */
-
-
 
   .hihero {
     padding-bottom:0;
@@ -875,6 +852,9 @@ p.tagline {
     margin-bottom: 1rem;
   }
 
+  .refinedhifimockupimg, video {
+    width: 25rem;
+  }
 
 }
 
@@ -900,6 +880,7 @@ p.tagline {
     padding-right: 16%;
   }
 
+
   .navlinks {
     display:flex;
     grid-template-columns: 1fr 1fr 1fr;
@@ -915,6 +896,7 @@ p.tagline {
 
   footer {
     padding-left: 16%;
+    padding-right: 16%;
   }
 
   a.button {
@@ -935,7 +917,6 @@ p.tagline {
     grid-column-end: 3;
   }
 
-
   .testingimg {
     grid-column: span 2;
     grid-column-gap: 4rem;
@@ -946,6 +927,7 @@ p.tagline {
     /***footer icons ***/
     width: 8rem;
   }
+
 
   .companalysisSMicons li {
     display: block;
@@ -976,24 +958,8 @@ p.tagline {
     width: 31%;
   }
 
-  /* .begindesignicons {
-    margin-top: 10rem;
+  .refinedhifimockupimg, video {
+    width: 22rem;
   }
-
-  .educationicons {
-    margin-top: -25rem;
-  }
-
-  .techanddesignicons {
-    margin-top: 4rem;
-  }
-
-  .growuxicons {
-    margin-top: -19rem;
-  }
-
-  .finaluxicons {
-    margin-top: -20rem;
-  }*/
 
 }
