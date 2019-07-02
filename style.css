@@ -486,6 +486,10 @@ p.tagline {
     margin-top: 1rem;
   }
 
+  .refinedhifimockupimg, video {
+    width: 16.9rem;
+  }
+
 
 }
 
@@ -550,6 +554,10 @@ p.tagline {
 
   a.backtotopbutton {
     margin-bottom: 1rem;
+  }
+
+  .refinedhifimockupimg, video {
+    width: 15.9rem;
   }
 
 }
