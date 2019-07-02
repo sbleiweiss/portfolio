@@ -806,12 +806,19 @@ p.tagline {
     padding-top: 0;
   }
 
+  .abticonlist {
+    align-self: center;
+    justify-self: center;
+  }
+
   .abticonlistright{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    justify-content: end;
+    justify-self: center;
+    align-self: center;
+
   }
 
   .abticonlistfinal {
@@ -819,6 +826,8 @@ p.tagline {
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 4;
+    align-self: center;
+    justify-self: center; 
   }
 
   .aboutmebglight {
