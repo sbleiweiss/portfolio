@@ -5,6 +5,7 @@
 html {
   /***base size***/
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
