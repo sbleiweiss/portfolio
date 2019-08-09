@@ -1,3 +1,3 @@
 # My Portfolio 
 
-A showcase of my work at Bloc. 
+Professional showcase of my UX design work. Designed and coded by Sarah Bleiweiss.
