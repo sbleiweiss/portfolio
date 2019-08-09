@@ -687,7 +687,7 @@ p.tagline {
   .keytakeawaytesting, .pvisualdesign,
   .moodspireexplanationlogo, .gothic, .phifimockups,
   .hifimockupsandbutton, .actionitems, .actionitems2,
-  .actionitems3, .actionlist, .actiontakeaway {
+  .actionitems3, .actionlist, .actiontakeaway, .psproutfulsitemap {
     grid-column-start: 1;
     grid-column-end: 2;
   }
@@ -704,7 +704,7 @@ p.tagline {
 
 
   .tools, .duration, .rightbutton, .companalysisSMicons,
-  .gridphotoright, .userstories, .userflowbutton {
+  .gridphotoright, .userstories, .userflowbutton{
     grid-column-start: 3;
     grid-column-end: 4;
   }
@@ -714,7 +714,7 @@ p.tagline {
   .userpersonaquote, .testingevidence,
   .logosketches, .brandingprocess, .ptypography,
   .conclusionli, .pindetailright, .gridphotorightlarge,
-  .moodspiremockup {
+  .moodspiremockup, .sproutfulsitemap {
     grid-column-start: 2;
     grid-column-end: 4;
   }
