@@ -44,6 +44,8 @@ a{
   text-decoration: none;
 }
 
+
+
 a.button {
   /***button style***/
   background-color: #FFFFFF;
@@ -63,11 +65,11 @@ a.button {
   white-space: nowrap;
 }
 
-a.button:hover {
+/*** a.button:hover {
   color: #D26526;
   background-color: #FFFFFF;
   border: #D26526 solid .35rem;
-}
+}***/ 
 
 /* .button:last-child {
   /*** adjust buton spacing at the bottom to not double up on section padding***/

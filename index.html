@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="hover.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -32,9 +33,9 @@
             <nav class="topnav">
                 <a class="logo" href="index.html"><img src="images/logo.svg" alt="logo"></a>
                 <ul class="navlinks">
-                    <li><a href="project1.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="images/bleiweiss-resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="#work" class="hvr-fade">Work</a></li>
+                    <li><a href="about.html" class="hvr-fade">About</a></li>
+                    <li><a href="images/bleiweiss-resume.pdf" target="_blank" class="hvr-fade">Resume</a></li>
                 </ul>
             </nav>
         </header>
@@ -48,12 +49,14 @@
             <!-- <img src="/images/downward-arrow.svg" alt="downward arrow"> -->
         </section>
 
+
+
         <section class="section herolanding">
-            <!--sproutful-->
-            <p class="moodspirelanding">Sproutful</p>
+            <!--sproutful with work link (idtag)-->
+            <p id="work" class="moodspirelanding">Sproutful</p>
             <div class="heroheading">
                 <p class="tagline">Gain awareness & bring intentionality to your self care activities.</p>
-                <a href="sproutful.html" class="button leftsidebutton">Read case study</a>
+                <a href="sproutful.html" class="button leftsidebutton hvr-forward">Read case study</a>
             </div>
             <img class="gridphotorightlarge" src="images/sproutful-laptop-mockup.png" srcset="images/sproutful-laptop-mockup.png 1x, images/sproutful-laptop-mockup@2x.png 2x" alt="sproutful laptop mockup">
         </section>
@@ -63,10 +66,11 @@
             <p class="moodspirelanding">Moodspire</p>
             <div class="heroheading">
                 <p class="tagline">Start with a mood, find inspiration. Create a collection. Ace your next creative project.</p>
-                <a href="project1.html" class="button leftsidebutton">Read case study</a>
+                <a href="project1.html" class="button leftsidebutton hvr-forward">Read case study</a>
             </div>
             <img class="gridphotorightlarge" src="images/laptop-mockup.png" srcset="images/laptop-mockup.png 1x, images/laptop-mockup@2x.png 2x" alt="laptop mockup">
         </section>
+
         <footer>
             <p class="hello">Say hello!</p>
             <p class="footerconnect">Have questions or want to talk UX? Feel free to connect with me!</p>
