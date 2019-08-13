@@ -397,7 +397,7 @@ p.tagline {
   }
 
   .hihero {
-    padding-bottom:22rem; /* 0 with leaf img*/
+    padding-bottom:15rem; /* 0 with leaf img*/
   }
 
   .colorpalette, .moodspirelogo, .aboutphoto, .gothic {
@@ -575,7 +575,7 @@ p.tagline {
   }
 
   .hihero {
-    padding-bottom:22rem;
+    padding-bottom: 15rem;
   }
 
   .companalysisSMicons li {
