@@ -359,6 +359,10 @@ p.tagline {
   margin-left: -1.8rem;
 }
 
+/* .downward-arrow {
+  max-width: 3rem;
+} */
+
 .processlinkspace li {
   padding-bottom: .8rem;
 }
@@ -460,6 +464,7 @@ p.tagline {
   .companalysisSMicons li {
     width: 8rem;
   }
+
 
   .userpersonaphoto {
     padding-bottom: 2rem;
@@ -770,6 +775,11 @@ p.tagline {
   .wireframe {
     grid-column-start: 2;
     grid-column-end: 3;
+  }
+
+  .wireframecolumn3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
   }
 
 
